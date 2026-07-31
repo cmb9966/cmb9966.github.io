@@ -1,98 +1,153 @@
-/* Global Reset and Styling */
+/* Basic reset and professional layout styling with a custom theme */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #333333;
+    background-color: #f8fafc;
+    color: #1e293b;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Header / Hero styling */
+/* Header style with a custom purple-indigo gradient theme */
 header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
     color: white;
-    padding: 3rem 1rem;
+    width: 100%;
     text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Profile picture styling to make it a nice circular avatar with a border */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    margin: 0 0 0.5rem 0;
-    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
 header p {
     font-size: 1.2rem;
-    margin: 0;
+    opacity: 0.9;
 }
 
-/* Main content area styling to stack multiple cards nicely */
+/* Main content container */
 main {
-    flex: 1;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    gap: 1.5rem; /* Space between each card section */
+    gap: 1.5rem;
+    flex: 1;
 }
 
-/* Card container styling */
+/* Individual content cards */
 .card {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    max-width: 600px;
-    width: 100%;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-/* Subtle hover pop effect on cards */
-.card:hover {
-    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
+    color: #4f46e5;
     margin-top: 0;
-    color: #4a5568;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 0.5rem;
 }
 
-/* Unordered list styling for skills */
+/* Styled project list */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    background: #f1f5f9;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-left: 4px solid #6366f1;
+    border-radius: 4px;
+}
+
+/* Skills badge pill styling */
 .skills-list {
-    padding-left: 1.2rem;
-    line-height: 1.8;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-/* Button styling */
+.skills-list li {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Contact list styling and link hover effects */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+}
+
+.contact-list a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+    color: #6366f1;
+    text-decoration: underline;
+}
+
+/* Interactive button styling updated with a vibrant coral accent color */
 button {
-    background-color: #6e8efb;
+    background-color: #ff6b6b;
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 12px 24px;
     font-size: 1rem;
-    border-radius: 6px;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 1rem;
-    display: block;
-    width: 100%;
 }
 
-/* Button hover effect */
+/* Button hover and active effects */
 button:hover {
-    background-color: #5b75d9;
+    background-color: #ee5253;
+    transform: translateY(-2px);
 }
 
 /* Footer styling */
 footer {
-    background-color: #2d3748;
+    background-color: #1e293b;
     color: white;
-    padding: 1.5rem 1rem;
     text-align: center;
+    width: 100%;
+    padding: 1rem;
     font-size: 0.9rem;
 }
