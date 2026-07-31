@@ -3,72 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <!-- Link to our external CSS stylesheet -->
+    <title>Justin Berbecaru — Portfolio</title>
+    <!-- Inter Font from Google Fonts for crisp modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Link to our CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main header section with personal introduction and profile picture -->
-    <header>
-        <!-- Profile picture image element -->
-        <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-img">
-        <h1>Hi, I'm Justin Berbecaru</h1>
-        <p>Aspiring Computer Scientist & Tech Enthusiast</p>
-    </header>
 
-    <!-- Main content area containing portfolio sections -->
-    <main>
-        <!-- About Me Section -->
-        <section class="card">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I love building cool things for the web, learning how to code, and bringing creative ideas to life using HTML, CSS, and JavaScript.</p>
-        </section>
+    <div class="container">
+        <!-- Minimal Hero / Header -->
+        <header class="header">
+            <img src="https://picsum.photos/100" alt="Justin Berbecaru" class="avatar">
+            <div class="header-text">
+                <h1>Justin Berbecaru</h1>
+                <p class="subtitle">Aspiring Computer Scientist & Tech Enthusiast</p>
+            </div>
+        </header>
 
-        <!-- Skills Section -->
-        <section class="card">
-            <h2>My Skills</h2>
-            <p>Here are the technologies, tools, and mindsets I am currently mastering:</p>
-            <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>GitHub & Git</li>
-                <li>Problem Solving</li>
-                <li>UI/UX Design</li>
-            </ul>
-        </section>
+        <main>
+            <!-- About Section -->
+            <section class="section">
+                <h2>About</h2>
+                <p>Welcome to my portfolio! I build clean, intuitive experiences for the web. I'm currently focused on expanding my skills in modern front-end development, problem-solving, and web software architecture.</p>
+            </section>
 
-        <!-- Projects Section -->
-        <section class="card">
-            <h2>My Projects</h2>
-            <p>Here are some of the awesome things I'm currently working on:</p>
-            <ul class="project-list">
-                <li><strong>Project 1:</strong> This personal portfolio website!</li>
-                <li><strong>Project 2:</strong> Coming soon...</li>
-            </ul>
-            <!-- Interactive button with a vibrant accent color -->
-            <button id="alertBtn">Click for a Surprise!</button>
-        </section>
+            <!-- Skills Section -->
+            <section class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Git & GitHub</li>
+                    <li>Problem Solving</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </section>
 
-        <!-- New Contact Section -->
-        <section class="card">
-            <h2>Contact Me</h2>
-            <p>Want to get in touch or collaborate on a project? Reach out through the links below:</p>
-            <ul class="contact-list">
-                <!-- Replace with your actual email address -->
-                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <!-- Replace with your actual GitHub profile link -->
-                <li><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></li>
-            </ul>
-        </section>
-    </main>
+            <!-- Projects Section -->
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <span class="project-title">Personal Portfolio Website</span>
+                    <span class="project-desc">A minimalist single-page portfolio built with HTML, CSS, and JS.</span>
+                </div>
+                <div class="project-item">
+                    <span class="project-title">Upcoming Project</span>
+                    <span class="project-desc">Currently in development...</span>
+                </div>
+                
+                <button id="alertBtn" class="clean-btn">Say Hello 👋</button>
+            </section>
 
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2026 Justin Berbecaru. Hosted with GitHub Pages.</p>
-    </footer>
+            <!-- Contact Section -->
+            <section class="section">
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="link">Email</a>
+                    <span class="dot">•</span>
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="link">GitHub</a>
+                </div>
+            </section>
+        </main>
 
-    <!-- Link to our external JavaScript file -->
+        <footer>
+            <p>&copy; 2026 Justin Berbecaru</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
