@@ -8,28 +8,34 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    text-align: center;
 }
 
-/* Header styling */
+/* Header / Hero styling */
 header {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
-    padding: 2.5rem 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
 header h1 {
     margin: 0 0 0.5rem 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
-/* Main content area styling */
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Main content area styling to stack multiple cards nicely */
 main {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
+    gap: 1.5rem; /* Space between each card section */
 }
 
 /* Card container styling */
@@ -37,9 +43,29 @@ main {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
     width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+/* Subtle hover pop effect on cards */
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #4a5568;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 0.5rem;
+}
+
+/* Unordered list styling for skills */
+.skills-list {
+    padding-left: 1.2rem;
+    line-height: 1.8;
 }
 
 /* Button styling */
@@ -53,6 +79,8 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 1rem;
+    display: block;
+    width: 100%;
 }
 
 /* Button hover effect */
@@ -62,8 +90,9 @@ button:hover {
 
 /* Footer styling */
 footer {
-    background-color: #333333;
+    background-color: #2d3748;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
     font-size: 0.9rem;
 }
