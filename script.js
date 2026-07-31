@@ -1,20 +1,14 @@
-// Wait for the HTML document to fully load before running the script
+// Wait for the HTML document to fully load before running our script
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Grab the button element from our HTML using its ID
-    const colorBtn = document.getElementById('colorBtn');
-    
-    // An array of fun accent colors for our portfolio theme change
-    const colors = ['#ff7675', '#74b9ff', '#55efc4', '#ffeaa7', '#a29bfe'];
-    
+    // Grab our surprise button by its ID
+    const alertBtn = document.getElementById('alertBtn');
+
     // Listen for a 'click' event on the button
-    colorBtn.addEventListener('click', () => {
-        // Pick a random color from our array
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    alertBtn.addEventListener('click', () => {
+        // Show a custom popup greeting message
+        alert('Thank you for viewing my website and checking out my portfolio!');
         
-        // Change the button's background color dynamically to match the new vibe!
-        colorBtn.style.backgroundColor = randomColor;
-        
-        console.log("Button clicked! Accent color changed to: " + randomColor);
+        // Also change the button text after it's clicked
+        alertBtn.textContent = 'Awesome! Keep Coding 🌟';
     });
 });
